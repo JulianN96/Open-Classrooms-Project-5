@@ -6,6 +6,9 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+html{
+	scroll-padding-top: 5em;
+}
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -86,6 +89,7 @@ body {
 	width: 60%;
 	font-size: 1rem;
 }
+
 #about-me p {
 	width: 80%;
 	font-size: 14px;
@@ -130,6 +134,9 @@ body {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+}
+.gallery-item:hover{
+	cursor: pointer;
 }
 .mg-prev, .mg-next {
 	width: 30px;
@@ -329,6 +336,9 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
+	html{
+		scroll-padding-top: 10em;
+	}
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
